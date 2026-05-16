@@ -1,2 +1,16 @@
 {
+  "common": {
+    "welcome": "ยินดีต้อนรับ",
+    "language": "ภาษา",
+    "switchLocale": "เปลี่ยนภาษา"
+  },
+  "home": {
+    "title": "เรียนรู้การเขียนโค้ด",
+    "description": "เริ่มต้นเส้นทางการเขียนโค้ดของคุณกับ Codecamp Advantage เรียนรู้การพัฒนาเว็บตั้งแต่ HTML จนถึงแอปพลิเคชันแบบ Full-Stack",
+    "getStarted": "เริ่มเลย"
+  },
+  "about": {
+    "title": "เกี่ยวกับเรา",
+    "bio": "Codecamp Advantage เป็นโปรแกรม Bootcamp แบบเข้มข้นที่ออกแบบมาเพื่อพัฒนาคุณจากผู้เริ่มต้นสู่นักพัฒนามืออาชีพ หลักสูตรของเราครอบคลุม HTML, CSS, JavaScript, TypeScript, React, Next.js และอื่นๆ อีกมากมาย"
+  }
 }

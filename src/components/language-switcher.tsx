@@ -1,15 +1,25 @@
 "use client";
 
-// TODO: Create a language switcher component
-// - Display the current locale
-// - Provide buttons or a dropdown to switch between "en" and "th"
-// - Use next/navigation's useRouter and usePathname to switch locale
+import { useRouter, usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function LanguageSwitcher() {
+  const t = useTranslations("common");
+  const router = useRouter();
+  const pathname = usePathname();
+
+  function switchLocale(newLocale: string) {
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    router.push(segments.join("/"));
+  }
+
   return (
     <div>
-      {/* TODO: Implement locale switching */}
-      <span>Language Switcher</span>
+      <span>{t("language")}: </span>
+      <button onClick={() => switchLocale("en")}>English</button>
+      {" | "}
+      <button onClick={() => switchLocale("th")}>ไทย</button>
     </div>
   );
 }

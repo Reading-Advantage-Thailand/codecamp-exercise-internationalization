@@ -1,2 +1,16 @@
 {
+  "common": {
+    "welcome": "Welcome",
+    "language": "Language",
+    "switchLocale": "Switch Language"
+  },
+  "home": {
+    "title": "Learn to Code",
+    "description": "Start your coding journey with Codecamp Advantage. Master web development from HTML to full-stack applications.",
+    "getStarted": "Get Started"
+  },
+  "about": {
+    "title": "About Us",
+    "bio": "Codecamp Advantage is an intensive bootcamp program designed to take you from beginner to professional developer. Our curriculum covers HTML, CSS, JavaScript, TypeScript, React, Next.js, and more."
+  }
 }

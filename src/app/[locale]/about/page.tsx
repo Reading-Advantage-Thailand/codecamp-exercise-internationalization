@@ -1,11 +1,12 @@
-// TODO: This is a Server Component — use getTranslations('about')
-// - Display the about page title and bio using server-side translations
+import { getTranslations } from "next-intl/server";
 
 export default async function AboutPage() {
+  const t = await getTranslations("about");
+
   return (
-    <main>
-      <h1>About</h1>
-      <p>This page should use server-side translations from the about namespace.</p>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+      <h1>{t("title")}</h1>
+      <p>{t("bio")}</p>
     </main>
   );
 }

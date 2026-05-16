@@ -1,15 +1,17 @@
 "use client";
 
-// TODO: Use useTranslations('home') to display translated content
-// - Display a welcome title
-// - Display a description
-// - Include the LanguageSwitcher component
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export default function HomePage() {
+  const t = useTranslations("home");
+
   return (
-    <main>
-      <h1>Welcome</h1>
-      <p>This page should use translations from the home namespace.</p>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+      <LanguageSwitcher />
+      <h1>{t("title")}</h1>
+      <p>{t("description")}</p>
+      <button>{t("getStarted")}</button>
     </main>
   );
 }
