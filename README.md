@@ -13,8 +13,8 @@
 ### Setup
 
 1. **Fork** this repository and **clone** your fork
-2. Run `npm install` to install dependencies
-3. Run `npm run dev` to start the development server
+2. Run `pnpm install` to install dependencies
+3. Run `pnpm dev` to start the development server
 
 ### Step 1: Create Translation Messages
 
@@ -42,7 +42,7 @@ Required keys:
 
 ### Step 4: Run Tests
 
-- Run `npm test` to verify your implementations
+- Run `pnpm test` to verify your implementations
 
 ## Acceptance Criteria
 
@@ -51,7 +51,7 @@ Required keys:
 - [ ] About page uses server-side translations
 - [ ] Language switcher toggles between `/en` and `/th` routes
 - [ ] No hardcoded strings in components (all strings come from translations)
-- [ ] `npm test` passes with all tests green
+- [ ] `pnpm test` passes with all tests green
 
 ## File Structure
 
@@ -84,8 +84,8 @@ codecamp-exercise-internationalization/
 ## Commands
 
 ```bash
-npm install     # Install dependencies
-npm run dev     # Start dev server at http://localhost:3000
+pnpm install     # Install dependencies
+pnpm dev     # Start dev server at http://localhost:3000
 npm test        # Run all tests
 ```
 
